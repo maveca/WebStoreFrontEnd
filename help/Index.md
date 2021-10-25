@@ -1,3 +1,3 @@
 # Web Store Front End
 
-blabla
+This is my Web Store.
