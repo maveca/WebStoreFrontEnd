@@ -30,4 +30,4 @@ This is my first topic.
     end;
 ```
 
-[Index](.\help\Index.md)
+[Index](/help/Index.md)
