@@ -44,7 +44,7 @@ codeunit 50100 "WebServiceGet"
         Base64Convert: Codeunit "Base64 Convert";
         AuthString: Text;
         BasicTok: Label 'Basic %1', Comment = '%1 = placeholder for username and password.';
-        UserPwdTok: Label '%1:%2', Comment = '%1 = username, %2 = password.';
+        UserPwdTok: Label '%1:%2', Comment = '%1 = Username, %2 = Password.';
     begin
         AuthString := StrSubstNo(UserPwdTok, 'admin', 'Pa$$w0rd!');
         httpClient.DefaultRequestHeaders().Add('Authorization',
