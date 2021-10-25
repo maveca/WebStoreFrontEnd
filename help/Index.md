@@ -1,3 +1,3 @@
 # Web Store Front End
 
-blabla
+A little bit of new text in feature1 branch.
