@@ -1,0 +1,4 @@
+.vscode/.alcache/*.*
+.alpackages/*.*
+*.app
+.vscode/*.*
