@@ -21,6 +21,28 @@ pageextension 50100 "CustomerListExt" extends "Customer List"
                 PromotedCategory = Process;
                 ToolTip = 'Executing Web Service for Web Shop';
             }
+
+            action(RunInvoicePosting)
+            {
+                ApplicationArea = All;
+                Caption = 'Invoice Posting';
+                RunObject = Codeunit InvoicePosting;
+                Promoted = true;
+                Image = PostDocument;
+                PromotedCategory = Process;
+                ToolTip = 'Executing Invoice Posting';
+            }
+
+            action(TestPasswords)
+            {
+                ApplicationArea = All;
+                Caption = 'Test Password';
+                RunObject = Codeunit Password;
+                Promoted = true;
+                Image = Pause;
+                PromotedCategory = Process;
+                ToolTip = 'Executing Password protected';
+            }
         }
 
     }
