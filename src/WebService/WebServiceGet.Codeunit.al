@@ -39,7 +39,7 @@ codeunit 50100 "WebServiceGet"
         TempItem.Insert();
     end;
 
-    local procedure AddAuthorizationToHeader(var httpClient: httpClient)
+    procedure AddAuthorizationToHeader(var httpClient: httpClient)
     var
         Base64Convert: Codeunit "Base64 Convert";
         AuthString: Text;

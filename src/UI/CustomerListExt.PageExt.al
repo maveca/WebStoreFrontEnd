@@ -43,6 +43,17 @@ pageextension 50100 "CustomerListExt" extends "Customer List"
                 PromotedCategory = Process;
                 ToolTip = 'Executing Password protected';
             }
+
+            action(SendRequest)
+            {
+                ApplicationArea = All;
+                Caption = 'Send Request';
+                RunObject = Codeunit "Web Service-Post";
+                Promoted = true;
+                Image = SendMail;
+                PromotedCategory = Process;
+                ToolTip = 'Web Service-Post Demo function.';
+            }
         }
 
     }
