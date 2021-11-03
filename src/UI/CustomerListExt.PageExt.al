@@ -54,6 +54,17 @@ pageextension 50100 "CustomerListExt" extends "Customer List"
                 PromotedCategory = Process;
                 ToolTip = 'Web Service-Post Demo function.';
             }
+
+            action(SendInvoice)
+            {
+                ApplicationArea = All;
+                Caption = 'Send Invoice';
+                RunObject = Codeunit "Web Service-SendInvoice";
+                Promoted = true;
+                Image = SendElectronicDocument;
+                PromotedCategory = Process;
+                ToolTip = 'Web Service-Send Invoice.';
+            }
         }
 
     }
